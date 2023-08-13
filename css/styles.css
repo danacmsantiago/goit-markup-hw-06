@@ -603,8 +603,7 @@ body {
 
 .footer {
   display: flex;
-  /*flex-wrap: wrap;*/
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: -12px;
   margin-left: -50px;
   align-items: baseline;
@@ -667,7 +666,6 @@ body {
   margin-left: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .footer-form .label {
@@ -729,7 +727,6 @@ body {
 .subscribe-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 /* Portfolio Page */
