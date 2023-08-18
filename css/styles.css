@@ -344,7 +344,9 @@ body {
 .form .input:hover,
 .form .input:focus,
 .form .input:hover,
-.form .input:focus {
+.form .input:focus,
+.form .textarea:hover,
+.form .textarea:focus {
   border-color: var(--iris);
   outline: none;
 }
@@ -409,6 +411,10 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-icon:hover {
+  border-color: var(--iris);
 }
 
 .form .checkbox:checked + .checkbox-icon {
@@ -650,7 +656,7 @@ body {
 .social-footer {
   display: flex;
   gap: 16px;
-  padding-top: 10px;
+  padding-top: 16px;
   justify-content: center;
 }
 
@@ -686,7 +692,6 @@ body {
 .footer-form {
   margin-left: 80px;
   display: flex;
-  flex-direction: row;
 }
 
 .footer-input {
@@ -694,14 +699,15 @@ body {
   width: 264px;
   height: 40px;
   padding: 8px 16px;
-  display: flex;
   margin-top: 16px;
   font-size: 14px;
-  background-color: var(--navyblue);
+  background-color: transparent;
   border-radius: 4px;
   border: 1px solid var(--white, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
+
 .footer-input::placeholder {
   color: var(--white, #fff);
   font-size: 12px;
@@ -737,11 +743,6 @@ body {
   fill: var(--white);
   width: 24px;
   height: 20px;
-}
-
-.subscribe-form {
-  display: flex;
-  flex-direction: row;
 }
 
 /* Portfolio Page */
